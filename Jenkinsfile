@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'pm2 start npm --name "app name" -- start'
+                sh 'npm start'
             }
         }
     }
